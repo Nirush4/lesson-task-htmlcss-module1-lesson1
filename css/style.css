@@ -440,7 +440,7 @@ nav ul li {
 .contact-title {
     display: flex;
     justify-content: center;
-    padding: 4rem;
+    padding: 7rem 0rem 2rem 0rem;
 }
 
 .main-container-contact {
@@ -450,22 +450,40 @@ nav ul li {
     font-size: 1rem;
 }
 
-.message-contact {
-    max-width: 100%;
-    height: 9.5rem;
+.contact-first-table tr {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-first-section {
-    width: 13rem;
-    height: 1.7rem;
+    width: 17rem;
+    padding-top: .8rem
 }
 
-.contact-ul-1 {
+.contact-tr-1 td {
+    padding-top: 0.2rem;
+}
+
+.contact-second-table tr {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-
 }
+
+.message-contact {
+    width: 17rem;
+    max-width: 100%;
+    height: 9.8rem;
+}
+
+.contact-tr-2 td {
+    padding-top: 0.2rem;
+}
+
+.contact-first-section {
+    font-size: 1rem;
+}
+
+
 
 /* Utilities
 
