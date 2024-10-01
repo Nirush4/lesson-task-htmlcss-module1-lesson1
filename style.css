@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/* @font-face {
+    font-family: sans-serif;
+    src: url()'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
+} */
+
 @import url(/fonts/BootsAndSpurs.ttf);
 
 html {
@@ -17,7 +22,7 @@ body {
     flex-direction: column;
     height: 100dvh;
     font-size: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
@@ -312,19 +317,21 @@ nav ul li {
     font-weight: normal;
 }
 
+.guitar-list-img {
+    transition: all 0.4s ease;
+}
+
 .guitar-list-img:hover {
     scale: 105%;
-    transition: all 0.9ms ease-in-out;
 }
 
 .l-footer {
     display: flex;
     background-color: black;
     width: 100vw;
-    height: 3rem;
+    min-height: 3rem;
     /* margin-top: 4em; */
     justify-content: center;
-    display: flex;
     flex: 0 1 auto;
 }
 
@@ -435,7 +442,7 @@ nav ul li {
     text-decoration: line-through;
 }
 
-/* Contat */
+/* Contact */
 
 .contact-title {
     display: flex;
@@ -448,6 +455,7 @@ nav ul li {
     justify-content: center;
     gap: 3rem;
     font-size: 1rem;
+    margin-bottom: 25em;
 }
 
 .contact-first-table tr {
@@ -483,6 +491,20 @@ nav ul li {
     font-size: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+
+    .main-container-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-bottom: 13.42rem;
+    }
+
+}
+
+
+/* imp! Sec */
 
 
 /* Utilities
