@@ -7,14 +7,16 @@
     <meta name="description" content="Get real authentic, hand-crafted guitars from Guitar Kings" />
     <title>Guitar Kings|Contact</title>
 
-    <!-- <script src="nav.js" defer></script> -->
+    <script src="nav.js" defer></script>
 </head>
 <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
     <header class="l-header">
-
+        <div>
+            <button data-btn="nav-toggle">X</button>
+        </div>
         <nav class="desktop-nav">
             <a href="index.html" class="logo">Guitar Kings</a>
             <ul class="nav-links">
@@ -24,33 +26,7 @@
             </ul>
         </nav>
 
-        <div class="nav-bar-icon">
-            <label for="mobil-nav-check">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#e8eaed">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                    </svg>
-                </span>
-            </label>
-        </div>
-
-
-        <input type="checkbox" id="mobil-nav-check">
-
-        <nav class="mobile-nav">
-            <div class="close-icon-section-mobile">
-                <span class="nav-close-icon-mobile">
-                    <label for="mobil-nav-check" class="nav-close-icon-label">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#e8eaed">
-                            <path
-                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                        </svg>
-                    </label>
-                </span>
-            </div>
-
+        <nav class="mobile-nav" id="js-nav">
             <a href="index.html" class="logo mobile-nav-logo">Guitar Kings</a>
             <ul class="nav-links nav-mobile-links">
                 <li><a href="index.html" class="nav-item mobile-nav-item">Home</a></li>

@@ -14,12 +14,47 @@
 
 <body>
     <header class="l-header">
-        <nav>
+        <nav class="desktop-nav">
             <a href="index.html" class="logo">Guitar Kings</a>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-item">Home</a></li>
                 <li><a href="guitar.html" class="nav-item">Guitars</a></li>
                 <li><a href="contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="nav-bar-icon">
+            <label for="mobil-nav-check">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </span>
+            </label>
+        </div>
+
+        <input type="checkbox" id="mobil-nav-check">
+
+        <nav class="mobile-nav">
+            <div class="close-icon-section-mobile">
+                <span class="nav-close-icon-mobile">
+                    <label for="mobil-nav-check" class="nav-close-icon-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e8eaed">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
+                    </label>
+                </span>
+            </div>
+
+            <a href="index.html" class="logo mobile-nav-logo">Guitar Kings</a>
+            <ul class="nav-links nav-mobile-links">
+                <li><a href="index.html" class="nav-item mobile-nav-item">Home</a></li>
+                <li><a href="guitar.html" class="nav-item mobile-nav-item">Guitars</a></li>
+                <li><a href="contact.html" class="nav-item mobile-nav-item">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +64,7 @@
     <main class="l-main">
         <section class="first-section">
             <h1>Authentic Handmade Guitars</h1>
-            <a href="#" class="btn-view">View Guitars</a>
+            <a href="/guitar.html" class="btn-view">View Guitars</a>
         </section>
         <section class="second-section">
             <div class="second-section-content">
@@ -115,7 +150,7 @@
                     <div class="section-4-main-detail">
                         <div class="section-4-item-detail">
                             <h3 class="section-4-item-2">Adirondack Red</h3>
-                            <p><span class="span-section-4-2">$500</span>$400</p>
+                            <p><span class="offer-500">$500</span>$400</p>
                         </div>
                         <div class="section-4-btn-1">
                             <button class="section-4-view-button-2"><a href="#">On Sale</a></button>
