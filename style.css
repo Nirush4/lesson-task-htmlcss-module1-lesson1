@@ -232,7 +232,7 @@ nav ul li {
 
 .second-section {
     width: 100vw;
-    padding: 150px;
+    padding: 8% 15%;
     display: flex;
     justify-content: center;
 
@@ -244,6 +244,16 @@ nav ul li {
     display: flex;
     gap: 50px;
     align-items: center;
+    justify-content: center;
+}
+
+@media (width <=600px) {
+    .second-section-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
 }
 
 .guitar-h2 {
@@ -256,15 +266,46 @@ nav ul li {
     font-size: 1.2rem;
 }
 
-.second-section-content col-last {
-    align-self: flex-end;
+.second-section-content .col-last {
+    width: 50%;
+    max-width: 100%;
     display: flex;
-    flex: 1;
+    justify-content: center;
 
 }
 
+@media (width <=600px) {
+    .second-section-content .col-last {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+.second-section-content .col-first {
+    width: 50%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+@media (width <=600px) {
+    .second-section-content .col-first {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
 .playingguitar {
-    width: 520px;
+    width: 100%;
     height: auto;
     border-radius: 50px;
 }
@@ -685,19 +726,29 @@ input[type="submit"]:hover {
     flex: 1 1 100%;
     flex-wrap: wrap;
     height: auto;
-    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-container-product {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+        height: auto;
+    }
 }
 
 .image-detail-product {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    width: 50%;
     height: auto;
     flex: 1 1 50%;
     padding: 13rem 2rem 0rem 10rem;
-
 }
+
 
 .image-detail-product img {
     display: flex;
@@ -706,10 +757,17 @@ input[type="submit"]:hover {
     justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+
+    .image-detail-product {
+        padding: 10rem 5rem 0rem 5rem;
+    }
+}
+
 .img-gallery {
     display: flex;
     flex-direction: row;
-    width: 25.2%;
+    width: 25%;
     justify-content: space-between;
     padding-top: 0.8rem;
 
@@ -721,12 +779,23 @@ input[type="submit"]:hover {
     padding-right: 5px;
 }
 
+.img-gallery img:last-child {
+    padding-right: 0;
+}
+
 .second-sub-container-product {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 50%;
     flex-direction: column;
     padding: 13rem 10rem 0rem 2rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    .second-sub-container-product {
+        padding: 3rem 5rem 0rem 5rem;
+    }
 }
 
 .content-product span {
@@ -759,6 +828,15 @@ input[type="submit"]:hover {
     justify-content: flex-start;
     padding-top: 5.9rem;
 
+}
+
+@media screen and (max-width: 600px) {
+
+    .contact-product {
+        justify-content: center;
+        padding-top: 3rem;
+
+    }
 }
 
 /* imp! Sec */
