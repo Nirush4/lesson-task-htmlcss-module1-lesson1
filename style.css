@@ -158,9 +158,10 @@ header {
     .nav-bar-icon svg {
         display: flex;
     }
+
 }
 
-@media (600px <=width <=768px) {
+@media (601px <=width <=768px) {
 
     .desktop-nav {
         width: 100vw;
@@ -353,7 +354,7 @@ nav ul li {
 
     .second-section {
 
-        padding: 5rem 15%;
+        padding: 4rem 15%;
 
 
 
@@ -492,14 +493,14 @@ nav ul li {
 .section-3 {
     background-color: lightgray;
     width: 100vw;
-    height: 25em;
+    height: auto;
     padding: 0% 15%;
 }
 
 @media (width <=600px) {
 
     .section-3 {
-        height: 30em;
+        height: auto;
     }
 
     .reviews-content {
@@ -516,6 +517,7 @@ nav ul li {
     }
 
 }
+
 
 .section-3-main-content {
     padding: 3em 0em;
@@ -650,6 +652,23 @@ nav ul li {
         width: 100%;
 
     }
+}
+
+@media (width <=768px) {
+
+    .section-4-tile {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        width: 100%;
+
+    }
+
+    .section-4-title-right-div {
+        display: flex;
+        width: 0%;
+    }
+
 }
 
 .l-footer {
