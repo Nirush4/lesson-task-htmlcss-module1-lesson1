@@ -672,7 +672,7 @@ nav ul li {
     }
 }
 
-@media (width <768px) {
+@media (600px< width <768px) {
 
     .section-4-tile {
         display: flex;
