@@ -15,7 +15,8 @@ html {
     scroll-behavior: smooth;
 }
 
-/* First section */
+/*imp! First section */
+
 body {
     width: 100vw;
     min-height: 100dvh;
@@ -218,6 +219,7 @@ nav ul li {
     flex: 1 1 100%;
 }
 
+
 .desktop-nav-item:hover {
     background-color: rgb(128, 128, 128);
     border-bottom: 0.6rem solid red;
@@ -260,7 +262,7 @@ nav ul li {
 }
 
 
-/* Second Section */
+/*imp! Second Section */
 
 .text-div {
     position: absolute;
@@ -353,6 +355,12 @@ nav ul li {
 
 }
 
+.playingguitar {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
 @media (width <600px) {
 
     .second-section {
@@ -362,6 +370,7 @@ nav ul li {
     .second-section-content .col-last {
         width: 100%;
         max-width: 100%;
+        flex: 1 0 50%;
         display: flex;
         justify-content: center;
 
@@ -395,14 +404,19 @@ nav ul li {
 
 }
 
+@media (width <768px) {
 
-.playingguitar {
-    width: 100%;
-    height: auto;
-    border-radius: 50px;
+    .second-section-content {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-/* Third Section */
+
+/*imp! Third Section */
+
 
 .main-reviews {
     display: flex;
@@ -528,7 +542,7 @@ nav ul li {
     width: 100%;
 }
 
-/* Fourth Section */
+/*imp! Fourth Section */
 
 .section-4 {
     padding-bottom: 3em;
@@ -706,7 +720,7 @@ nav ul li {
     /* overflow-y: scroll; */
 }
 
-/* Guitar page */
+/*imp! Guitar page */
 
 .guitar-page-title h2 {
     display: flex;
@@ -800,7 +814,7 @@ nav ul li {
     text-decoration: line-through;
 }
 
-/* Contact */
+/*imp! Contact */
 
 .contact-title {
     display: flex;
@@ -904,7 +918,7 @@ input[type="submit"]:hover {
 
 }
 
-/* Product page */
+/*imp! Product page */
 
 
 .main-container-product {
@@ -914,17 +928,6 @@ input[type="submit"]:hover {
     flex: 1 1 100%;
     flex-wrap: wrap;
     height: auto;
-}
-
-@media screen and (max-width: 600px) {
-
-    .main-container-product {
-        display: flex;
-        flex-direction: row;
-        flex: 1 1 100%;
-        flex-wrap: wrap;
-        height: auto;
-    }
 }
 
 .image-detail-product {
@@ -945,12 +948,7 @@ input[type="submit"]:hover {
     justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
 
-    .image-detail-product {
-        padding: 10rem 5rem 0rem 5rem;
-    }
-}
 
 .img-gallery {
     display: flex;
@@ -977,13 +975,6 @@ input[type="submit"]:hover {
     flex: 1 1 50%;
     flex-direction: column;
     padding: 13rem 10rem 0rem 2rem;
-}
-
-@media screen and (max-width: 600px) {
-
-    .second-sub-container-product {
-        padding: 3rem 5rem 0rem 5rem;
-    }
 }
 
 .content-product span {
@@ -1018,11 +1009,43 @@ input[type="submit"]:hover {
 
 }
 
-@media screen and (max-width: 600px) {
+@media (width <600px) {
+
+    .second-sub-container-product {
+        padding: 3rem 5rem 0rem 5rem;
+    }
 
     .contact-product {
         justify-content: center;
         padding-top: 3rem;
+
+    }
+
+    .image-detail-product {
+        padding: 10rem 5rem 0rem 5rem;
+    }
+
+    .main-container-product {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+}
+
+@media (600px< width <768px) {
+
+    .image-detail-product {
+        padding: 13rem 6rem 0rem 6rem;
+    }
+
+    .second-sub-container-product {
+        padding: 4rem 6rem 0rem 6rem;
+    }
+
+    .contact-product {
+        padding-top: 2.5rem;
 
     }
 }
